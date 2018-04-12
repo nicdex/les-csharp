@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Cqrs")]
+[assembly: AssemblyTitle("Les.CSharp.Web")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Cqrs")]
+[assembly: AssemblyProduct("Les.CSharp.Web")]
 [assembly: AssemblyCopyright("Copyright © Nicolas Dextraze 2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("152b7f7a-5629-4736-af04-2b72d50ceaeb")]
+[assembly: Guid("FD3EE87A-8B18-4D89-BD02-DA65B1B43D18")]
 
 // Version information for an assembly consists of the following four values:
 //

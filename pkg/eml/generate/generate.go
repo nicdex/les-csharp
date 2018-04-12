@@ -15,11 +15,14 @@ func Generate(system eml.Solution, renderingDirectory string, infrastructureTemp
 	var eventsDirectory = filepath.Join(csharpRenderingDirectory, "src", "Les.CSharp.Domain", "Events")
 	var commandsDirectory = filepath.Join(csharpRenderingDirectory, "src", "Les.CSharp.Domain", "Commands")
 	var domainDirectory = filepath.Join(csharpRenderingDirectory, "src", "Les.CSharp.Domain", "Domain")
-	var controllerDirectory = filepath.Join(csharpRenderingDirectory, "src", "Les.CSharp.WebApi", "Controllers")
+	var controllerDirectory = filepath.Join(csharpRenderingDirectory, "src", "Les.CSharp.Web", "Controllers")
 	var readmodelDirectory = filepath.Join(csharpRenderingDirectory, "src", "Les.CSharp.Domain", "ReadModels")
 
 	deleteAllExceptNodeModules(csharpRenderingDirectory)
 	copyInfrastructureTemplate(csharpTemplateDirectory, csharpRenderingDirectory)
+
+	// C# considerations
+	// - add files in .csproj
 
 	for _, boundedContext := range system.Contexts {
 		for _, stream := range boundedContext.Streams {
